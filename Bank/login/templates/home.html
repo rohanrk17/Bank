@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bank</title>
+<meta charset="utf-8"/>
+{% load staticfiles %}
+<link rel='stylesheet' href="/static/css/bootstrap.min.css" type='text/css'>
+</head>
+<body>
+
+{% block content %}
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Rk Bank</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Application</a></li>
+      
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+  <h1><center>WelCome!!!!!</center></h1>
+  <p>Create online account in a minute</p> 
+</div>
+  
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Bank Account</h3>
+      <p>Create a BankAccount...</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Apply CreditCard</h3>
+      <p>Apply credit card with maximum benefits...</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Apply Loans</h3>        
+      <p>Apply Personal,Education loan with minimum interest ...</p>
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+</body>
+</html>
