@@ -26,8 +26,7 @@ urlpatterns = [
     url(r'^loggedin/',Loggedin),
     url(r'^invalid/',Invalid_login),
     url(r'^signup/',UserFormView.as_view()),
-    url(r'^profile/',TemplateView.as_view(
-      template_name = 'profile.html')), 
+    
     url(r'^saved/', SaveProfile),
     url(r'^mytrans/',My_transactions),
 ]
