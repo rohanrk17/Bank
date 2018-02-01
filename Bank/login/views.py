@@ -42,13 +42,13 @@ def Logout(request):
 
 class UserFormView(View):
     form_class=SignupForm
-    template_name='signup.html'
+    #template_name='signup.html'
     
     @csrf_exempt
     def get(self,request):
         form=self.form_class(None) 
         print("form get output"+str(form))
-        return render(request, self.template_name, {'form':form})
+        #return render(request, self.template_name, {'form':form})
     @csrf_exempt
     def post(self,request):
         form=self.form_class(request.POST)
@@ -90,8 +90,8 @@ def My_transactions(request):
     return render_to_response('mytransaction.html') 
 
 
-def IndexView(ListView):
-    template_name= 'loggedin.html'
+#def IndexView(ListView):
+   # template_name= 'loggedin.html'
     
     def get_queryset(self):
         return Post.objects.all()
