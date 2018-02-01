@@ -9,7 +9,7 @@ from django.views import generic
 from django.views.generic import ListView
 from .forms import SignupForm,ProfileForm
 from django.views.generic import View
-from rest_framework.urls import template_name
+#from rest_framework.urls import template_name
 from requests.api import request
 from django.contrib.auth import authenticate,login
 from .models import Profile,Post
